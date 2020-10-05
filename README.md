@@ -1,2 +1,2 @@
 # docusaurus-preset
-Preset for docusaurus to include default plugins and themes
+Docusaurus preset to include default plugins and themes for Zepben documentation
