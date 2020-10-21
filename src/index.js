@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = function preset(context, opts = {}) {
   const { siteConfig = {} } = context;
   const { themeConfig } = siteConfig;
