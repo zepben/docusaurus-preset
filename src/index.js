@@ -34,6 +34,7 @@ module.exports = function preset(context, opts = {}) {
           require.resolve("@docusaurus/plugin-sitemap"),
           opts.sitemap,
         ],
+      path.resolve(__dirname, "plugins", "custom-loaders"),
     ],
   };
 };
