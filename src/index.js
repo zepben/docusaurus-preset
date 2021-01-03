@@ -8,15 +8,22 @@ module.exports = function preset(context, opts = {}) {
 
   return {
     themes: [
-      [require.resolve("@docusaurus/theme-classic"), opts.theme],
       [
-        require.resolve("@docusaurus/theme-search-algolia"),
+        require.resolve("@docusaurus/theme-classic"),
         {
-          apiKey: "b5ec32dcc5109c1a14d773fd21604bce",
-          indexName: "zepben-docs",
-          appId: "3K6D3DR52K",
+          ...opts.theme,
+          algolia: {
+            apiKey: "b5ec32dcc5109c1a14d773fd21604bce",
+            indexName: "zepben-docs",
+            appId: "3K6D3DR52K",
+          },
+          googleAnalytics: {
+            trackingID: "UA-81287323-1",
+            anonymizeIP: false,
+          },
         },
       ],
+      [require.resolve("@docusaurus/theme-search-algolia")],
     ],
     plugins: [
       opts.docs !== false && [
@@ -31,13 +38,7 @@ module.exports = function preset(context, opts = {}) {
         require.resolve("@docusaurus/plugin-content-pages"),
         opts.pages,
       ],
-      isProd && [
-        require.resolve("@docusaurus/plugin-google-analytics"),
-        {
-          trackingID: "UA-81287323-1",
-          anonymizeIP: false,
-        },
-      ],
+      isProd && require.resolve("@docusaurus/plugin-google-analytics"),
       debug && require.resolve("@docusaurus/plugin-debug"),
       isProd &&
         opts.sitemap !== false && [
