@@ -23,7 +23,7 @@ module.exports = function preset(context, opts = {}) {
           },
         },
       ],
-      [require.resolve("@docusaurus/theme-search-algolia")],
+      require.resolve("@docusaurus/theme-search-algolia"),
     ],
     plugins: [
       opts.docs !== false && [
