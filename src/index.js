@@ -8,21 +8,7 @@ module.exports = function preset(context, opts = {}) {
 
   return {
     themes: [
-      [
-        require.resolve("@docusaurus/theme-classic"),
-        {
-          ...opts.theme,
-          algolia: {
-            apiKey: "b5ec32dcc5109c1a14d773fd21604bce",
-            indexName: "zepben-docs",
-            appId: "3K6D3DR52K",
-          },
-          googleAnalytics: {
-            trackingID: "UA-81287323-1",
-            anonymizeIP: false,
-          },
-        },
-      ],
+      [require.resolve("@docusaurus/theme-classic"), opts.theme],
       require.resolve("@docusaurus/theme-search-algolia"),
     ],
     plugins: [
@@ -48,4 +34,16 @@ module.exports = function preset(context, opts = {}) {
       path.resolve(__dirname, "plugins", "custom-loaders"),
     ],
   };
+};
+
+module.exports.defaultThemeConfig = {
+  algolia: {
+    apiKey: "b5ec32dcc5109c1a14d773fd21604bce",
+    indexName: "zepben-docs",
+    appId: "3K6D3DR52K",
+  },
+  googleAnalytics: {
+    trackingID: "UA-81287323-1",
+    anonymizeIP: false,
+  },
 };
