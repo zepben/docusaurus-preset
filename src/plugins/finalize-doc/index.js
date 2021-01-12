@@ -16,7 +16,7 @@ module.exports = function () {
         extendCli(cli) {
             cli
                 .description("finalize documentation by providing version number")
-                .command('release <ver>')
+                .command('finalize-doc <ver>')
                 .action(async (version) => {
                     await exec(`npm run docusaurus docs:version ${version}`);
                     fs.stat("./static/spec/next", (err) => {
