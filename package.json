@@ -1,6 +1,6 @@
 {
   "name": "@zepben/docusaurus-preset",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Docusaurus Preset for Zepben Doco",
   "main": "src/index.js",
   "publishConfig": {
@@ -20,6 +20,7 @@
     "@docusaurus/plugin-sitemap": "2.0.0-alpha.64",
     "@docusaurus/theme-classic": "2.0.0-alpha.64",
     "@docusaurus/theme-search-algolia": "2.0.0-alpha.64",
+    "fs-extra": "9.0.1",
     "yaml-loader": "0.6.0"
   },
   "peerDependencies": {

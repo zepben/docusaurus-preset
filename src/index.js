@@ -32,8 +32,8 @@ module.exports = function preset(context, opts = {}) {
           opts.sitemap,
         ],
       path.resolve(__dirname, "plugins", "custom-loaders"),
-    ],
-  };
+      path.resolve(__dirname, "plugins", "finalize-doc")
+  ]};
 };
 
 module.exports.defaultThemeConfig = {
