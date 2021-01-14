@@ -41,6 +41,7 @@ module.exports.defaultThemeConfig = {
     apiKey: "b5ec32dcc5109c1a14d773fd21604bce",
     indexName: "zepben-docs",
     appId: "3K6D3DR52K",
+    contextualSearch: true,
   },
   googleAnalytics: {
     trackingID: "UA-81287323-1",
