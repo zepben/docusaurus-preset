@@ -1,6 +1,6 @@
 {
   "name": "@zepben/docusaurus-preset",
-  "version": "0.7.0",
+  "version": "0.8.0-next1",
   "description": "Docusaurus Preset for Zepben Doco",
   "main": "src/index.js",
   "publishConfig": {
