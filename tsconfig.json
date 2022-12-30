@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "tsc",
+    "outDir": "lib",
     "baseUrl": "./",
     "declaration": true,
     "jsx": "react",
