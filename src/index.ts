@@ -88,7 +88,7 @@ export default function preset(
     );
   }
 
-  plugins.push(path.resolve(__dirname, "plugins", "custom-loaders")),
+  plugins.push(path.resolve(__dirname, "plugins", "custom-loaders"));
   return {themes, plugins};
 }
 
