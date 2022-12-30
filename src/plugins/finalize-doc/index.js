@@ -19,9 +19,9 @@ module.exports = function () {
                 .command('finalize-doc <ver>')
                 .action(async (version) => {
                     await exec(`npm run docusaurus docs:version ${version}`);
-                    fs.stat("./static/spec/next", (err) => {
+                    fs.stat("./static/", (err) => {
                         if (!err) {
-                            fse.copySync("./static/spec/next", `./static/spec/${version}`);
+                            fse.copySync("./static", "./versioned_docs/static/");
                         }
                     });
                 });
