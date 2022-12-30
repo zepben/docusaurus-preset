@@ -89,7 +89,6 @@ export default function preset(
   }
 
   plugins.push(path.resolve(__dirname, "plugins", "custom-loaders")),
-  plugins.push(path.resolve(__dirname, "plugins", "finalize-doc"))
   return {themes, plugins};
 }
 
