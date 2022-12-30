@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "outDir": "tsc",
+    "baseUrl": "./",
+    "declaration": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "skipLibCheck": true,
+    "useUnknownInCatchVariables": false,
+    "paths": {
+      "styles/*": ["src/styles/*"],
+      "pages/*": ["src/pages/*"],
+      "images/*": ["src/images/*"],
+      "reducers/*": ["src/reducers/*"],
+      "api/*": ["src/api/*"],
+      "components/*": ["src/components/*"],
+      "context/*": ["src/context/*"],
+      "hooks/*": ["src/hooks/*"],
+      "routes/*": ["src/routes/*"],
+      "energy/*": ["src/energy/*"],
+      "i18n": ["i18n.ts"],
+      "store": ["store.ts"]
+    },
+    "typeRoots": ["./src/types", "./node_modules/@types"]
+  },
+  "include": ["src", "__tests__"]
+}

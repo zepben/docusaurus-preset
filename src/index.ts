@@ -6,9 +6,6 @@
  *
  * Originally taken from Facebook Docusaurus at https://github.com/facebook/docusaurus/blob/v2.0.1/packages/docusaurus-preset-classic/src/index.ts
  */
-
-const path = require("path");
-
 import type {
   Preset,
   LoadContext,
@@ -16,6 +13,8 @@ import type {
   PluginOptions,
 } from '@docusaurus/types';
 import type {Options, ThemeConfig} from './options';
+
+const path = require("path");
 
 function makePluginConfig(
   source: string,
