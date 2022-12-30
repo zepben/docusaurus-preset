@@ -24,7 +24,7 @@ module.exports = function preset(context, opts = {}) {
         require.resolve("@docusaurus/plugin-content-pages"),
         opts.pages,
       ],
-      isProd && require.resolve("@docusaurus/plugin-google-analytics"),
+      isProd && require.resolve("@docusaurus/plugin-google-gtag"),
       debug && require.resolve("@docusaurus/plugin-debug"),
       isProd &&
         opts.sitemap !== false && [
@@ -43,8 +43,8 @@ module.exports.defaultThemeConfig = {
     appId: "3K6D3DR52K",
     contextualSearch: true,
   },
-  googleAnalytics: {
-    trackingID: "UA-81287323-1",
+  gtag: {
+    trackingID: "G-JG9JB2RSST",
     anonymizeIP: false,
   },
 };
