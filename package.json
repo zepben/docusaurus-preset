@@ -1,9 +1,12 @@
 {
   "name": "@zepben/docusaurus-preset",
-  "version": "0.8.0-next7",
+  "version": "0.8.0-next8",
   "description": "Docusaurus Preset for Zepben Doco",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch"
