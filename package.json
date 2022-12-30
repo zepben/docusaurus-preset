@@ -1,19 +1,16 @@
 {
   "name": "@zepben/docusaurus-preset",
-  "version": "0.8.0-next5",
+  "version": "0.8.0-next6",
   "description": "Docusaurus Preset for Zepben Doco",
-  "main": "src/index.js",
-  "publishConfig": {
-    "access": "public"
-  },
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch"
   },
-  "files": [
-    "src"
-  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "dependencies": {
     "@docusaurus/core": "2.0.1",
