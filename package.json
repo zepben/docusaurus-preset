@@ -1,6 +1,6 @@
 {
   "name": "@zepben/docusaurus-preset",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "description": "Docusaurus Preset for Zepben Doco",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@docusaurus/core": "~2.2.0",
+    "@docusaurus/mdx-loader": "~2.2.0",
     "@docusaurus/plugin-content-blog": "~2.2.0",
     "@docusaurus/plugin-content-docs": "~2.2.0",
     "@docusaurus/plugin-content-pages": "~2.2.0",
@@ -27,7 +28,6 @@
     "@docusaurus/theme-common": "~2.2.0",
     "@docusaurus/theme-search-algolia": "~2.2.0",
     "@docusaurus/types": "~2.2.0",
-    "@mdx-js/react": "1.6.22",
     "fs-extra": "11.1.0",
     "yaml-loader": "0.8.0"
   },
