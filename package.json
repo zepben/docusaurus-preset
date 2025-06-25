@@ -28,6 +28,7 @@
     "@docusaurus/theme-common": "3.8.1",
     "@docusaurus/theme-search-algolia": "3.8.1",
     "@docusaurus/types": "3.8.1",
+    "@docusaurus/faster": "3.8.1",
     "@mdx-js/react": "^3.1.0",
     "fs-extra": "11.3.0",
     "yaml-loader": "0.8.1"
