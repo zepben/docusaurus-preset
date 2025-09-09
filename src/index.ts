@@ -14,7 +14,7 @@ import type {
 } from '@docusaurus/types';
 import type {Options, ThemeConfig} from './options';
 
-const path = require("path");
+import path from 'path';
 
 function makePluginConfig(
   source: string,
