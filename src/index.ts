@@ -14,7 +14,7 @@ import type {
 } from '@docusaurus/types';
 import type {Options, ThemeConfig} from './options';
 
-const path = require("path");
+import path from 'path';
 
 function makePluginConfig(
   source: string,
@@ -89,6 +89,7 @@ export default function preset(
   }
 
   plugins.push(path.resolve(__dirname, "plugins", "custom-loaders"));
+  plugins.push(path.resolve(__dirname, "plugins", "docs-symlink"));
   return {themes, plugins};
 }
 
