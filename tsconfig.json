@@ -7,7 +7,7 @@
     "declaration": true,
     "jsx": "react",
     "module": "commonjs",
-    "target": "es2020",
+    "target": "es2023",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "resolveJsonModule": true,
