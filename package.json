@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@docusaurus/core": "3.8.1",
+    "@docusaurus/faster": "3.8.1",
     "@docusaurus/mdx-loader": "3.8.1",
     "@docusaurus/plugin-content-blog": "3.8.1",
     "@docusaurus/plugin-content-docs": "3.8.1",
@@ -28,11 +29,8 @@
     "@docusaurus/theme-common": "3.8.1",
     "@docusaurus/theme-search-algolia": "3.8.1",
     "@docusaurus/types": "3.8.1",
-    "@docusaurus/faster": "3.8.1",
     "@mdx-js/react": "^3.1.0",
     "fs-extra": "11.3.0",
-    "tsc": "^2.0.4",
-    "typescript": "^6.0.3",
     "yaml-loader": "0.8.1"
   },
   "peerDependencies": {
@@ -43,6 +41,8 @@
     "node": ">=24.12.0"
   },
   "devDependencies": {
-    "prettier": "3.6.0"
+    "prettier": "3.6.0",
+    "typescript": "^6.0.3",
+    "yaml-loader": "0.8.1"
   }
 }
